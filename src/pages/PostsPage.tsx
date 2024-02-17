@@ -1,11 +1,13 @@
 import React from 'react';
 
-const App = () => {
+const PostsPage = () => {
     return (
         <div>
-            App
+            PostsPage
         </div>
     );
 };
 
-export default App;
+export {
+    PostsPage
+};
