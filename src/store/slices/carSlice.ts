@@ -40,7 +40,7 @@ const create = createAsyncThunk<void, { car:ICar }>(
     }
 )
 
-const update = createAsyncThunk<void, {id: number, car:ICar }>(
+const update = createAsyncThunk<ICar[], {id: number, car:ICar }>(
     'carSlice/update',
     async ({id, car}, {rejectWithValue}) => {
         try {
